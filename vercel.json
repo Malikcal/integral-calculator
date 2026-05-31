@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/integrate.py": {
-      "runtime": "python3.14.15",
+      "runtime": "python3.12",
       "memory": 1024,
       "maxDuration": 30
     }
