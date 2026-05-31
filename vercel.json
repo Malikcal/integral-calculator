@@ -1,8 +1,10 @@
 {
   "functions": {
     "api/integrate.py": {
-      "memory": 1024,
-      "maxDuration": 30
+      "runtime": "vercel-python@0.2.0"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/api/integrate", "destination": "/api/integrate.py" }
+  ]
 }
