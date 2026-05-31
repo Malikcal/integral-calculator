@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/integrate.py": {
-      "runtime": "vercel-python@0.2.0"
-    }
-  },
   "rewrites": [
     { "source": "/api/integrate", "destination": "/api/integrate.py" }
   ]
