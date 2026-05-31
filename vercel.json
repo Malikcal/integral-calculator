@@ -1,15 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/integrate.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/integrate",
-      "dest": "api/integrate.py"
-    }
+  "rewrites": [
+    { "source": "/api/integrate", "destination": "/api/integrate.py" }
   ]
 }
