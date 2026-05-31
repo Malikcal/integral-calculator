@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/api/integrate", "destination": "/api/integrate.py" }
-  ]
+  "functions": {
+    "api/integrate.py": {
+      "runtime": "python3.14.15",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
 }
