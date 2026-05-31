@@ -1,8 +1,15 @@
 {
-  "functions": {
-    "api/integrate.py": {
-      "memory": 1024,
-      "maxDuration": 30
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/integrate.py",
+      "use": "@vercel/python"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/integrate",
+      "dest": "api/integrate.py"
+    }
+  ]
 }
